@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aya Benkarrou — Ingénieure d'Etat- digitalisation des procédés industriels</title>
+<title>Aya Benkarrou — Ingénieure d'État | Méthodes, Process, Qualité & Performance industrielle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -109,6 +109,8 @@
   }
   .project:last-child{border-bottom:none;}
   .project:nth-child(even) .project-media{order:2;}
+  .project.no-media{grid-template-columns:1fr;}
+  .project.no-media .project-body{max-width:78ch;}
   .media-placeholder{
     width:100%; min-height:150px; border:1px dashed var(--line); background:var(--panel);
     display:flex; align-items:center; justify-content:center;
@@ -120,7 +122,7 @@
     border:1px solid var(--accent); padding:3px 10px; margin-bottom:12px;
   }
   .project-body h3{font-size:1.15rem;}
-  .project-body p{color:var(--ink-soft); font-size:0.94rem;}
+  .project-body p{color:var(--ink-soft); font-size:0.94rem; margin-top:8px;}
   .project-body ul{color:var(--ink-soft); font-size:0.92rem; padding-left:18px; margin-top:10px;}
   .project-body li{margin-bottom:5px;}
   .stack{margin-top:14px; font-size:0.8rem; color:var(--copper);}
@@ -152,7 +154,7 @@
   /* Skills */
   .skills-columns{ columns:2; column-gap:40px; }
   .skill-group{ break-inside:avoid; margin-bottom:26px; }
-  .skill-group h3{font-family:'Inter', sans-serif; font-size:0.92rem; font-weight:700; color:var(--accent); margin-bottom:10px;}
+  .skill-group h3{font-family:'Inter', sans-serif; font-size:0.92rem; font-weight:700; color:var(--accent); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.02em;}
   .chip-row{display:flex; flex-wrap:wrap; gap:7px;}
   .chip{ background:var(--panel); border:1px solid var(--line); padding:5px 11px; font-size:0.82rem; color:var(--ink); }
 
@@ -245,15 +247,16 @@
         <img src="ayabelle.jfif" alt="Portrait d'Aya Benkarrou">
         <div class="hero-name">Aya Benkarrou آية بنقرو </div>
       </div>
-      <div class="eyebrow hero-anim">Ingénieure d'État — Modélisation, Digital Twins & Systèmes Énergétiques Intelligents</div>
-      <h1 class="hero-anim">Modéliser, optimiser et donner à voir la performance des systèmes industriels.</h1>
-      <p class="lede hero-anim">Jeune ingénieure spécialisée en jumeaux numériques, modélisation de procédés et systèmes intelligents : de la simulation physique à l'interface de supervision.</p>
+      <div class="eyebrow hero-anim">Ingénieure d'État — Génie Énergétique et Systèmes Intelligents | Méthodes industrielles, Process & Digitalisation</div>
+      <h1 class="hero-anim">Analyser, optimiser et digitaliser les processus industriels pour améliorer leur performance.</h1>
+      <p class="lede hero-anim">Ingénieure d'État orientée performance industrielle, amélioration continue et digitalisation. J'associe l'analyse des procédés, les outils de résolution de problèmes, la modélisation et l'analyse de données pour identifier les axes d'amélioration et accompagner l'optimisation des systèmes industriels.</p>
       <div class="about-text hero-anim">
-        <p>Diplômée d'un Diplôme d'Ingénieur d'État en Génie Énergétique et Systèmes Intelligents de l'ENSA Fès (Mention Bien). Mon projet de fin d'études, mené au DICE FactoryLab (UM6P Benguerir), porte sur le développement d'un jumeau numérique d'une unité industrielle de production d'acide sulfurique.</p>
-        <p>Au fil de mes stages, j'ai développé une expérience concrète en diagnostic de performance énergétique en environnement de production (LafargeHolcim) et en supervision de systèmes électriques via SCADA (RADEM).</p>
+        <p>Diplômée de l'École Nationale des Sciences Appliquées de Fès (ENSA Fès) en Génie Énergétique et Systèmes Intelligents, avec la mention Bien, je m'intéresse à l'amélioration de la performance des systèmes industriels à travers les méthodes d'ingénierie, l'analyse des procédés et le management de la qualité.</p>
+        <p>Mon parcours comprend une expérience en environnement industriel chez LafargeHolcim, consacrée à l'analyse des pertes énergétiques et à la proposition d'actions d'amélioration, ainsi qu'un projet de fin d'études réalisé au DICE FactoryLab (UM6P), en collaboration avec OCP Group, portant sur le développement et la validation d'un jumeau numérique d'une unité de production d'acide sulfurique.</p>
+        <p>Je développe également des solutions numériques appliquées à la maintenance et à la qualité, notamment des outils de suivi des indicateurs de performance, de gestion des interventions et de traçabilité.</p>
       </div>
       <ul class="contact-list hero-anim">
-        <li>Fès, Maroc — mobilité nationale</li>
+        <li>Meknès, Maroc — Mobilité nationale</li>
         <li><a href="mailto:benkarrouaya2021@gmail.com">benkarrouaya2021@gmail.com</a></li>
         <li>+212 617 290 872</li>
         <li><a href="https://www.linkedin.com/in/aya-benquarrou-26a13627a/" target="_blank">LinkedIn</a></li>
@@ -280,7 +283,7 @@
       <div>
         <div class="eyebrow">Projet de fin d'études</div>
         <h2>Digital Twin — JFC5 Sulfuric Acid Unit</h2>
-        <p class="lede">Jumeau numérique complet d'une unité industrielle multi-étapes (procédé DCDA, OCP Group), combinant modèles physiques, simulation dynamique et supervision temps réel, développé au DICE FactoryLab (UM6P Benguerir).</p>
+        <p class="lede">Développement d'un jumeau numérique dynamique de l'unité de production d'acide sulfurique JFC5 (procédé DCDA) d'OCP Group à Jorf Lasfar. Le projet combine modélisation physique des équipements, simulation dynamique, calibration sur données industrielles et supervision interactive pour analyser le comportement du procédé et explorer des scénarios de fonctionnement. Réalisé au DICE FactoryLab de l'UM6P Benguerir.</p>
       </div>
       <figure class="figure">
         <img src="1.png" alt="Synoptique de supervision du jumeau numérique JFC5">
@@ -288,21 +291,21 @@
     </div>
 
     <div class="process-row">
-      <div class="process-step"><span class="num">1</span>Industrial data</div>
-      <div class="process-step"><span class="num">2</span>Physical models</div>
-      <div class="process-step"><span class="num">3</span>Dynamic simulation</div>
+      <div class="process-step"><span class="num">1</span>Données industrielles</div>
+      <div class="process-step"><span class="num">2</span>Modélisation physique</div>
+      <div class="process-step"><span class="num">3</span>Simulation dynamique</div>
       <div class="process-step"><span class="num">4</span>Calibration</div>
       <div class="process-step"><span class="num">5</span>Validation</div>
-      <div class="process-step"><span class="num">6</span>Optimization</div>
-      <div class="process-step"><span class="num">7</span>Dashboard</div>
+      <div class="process-step"><span class="num">6</span>Analyse de scénarios</div>
+      <div class="process-step"><span class="num">7</span>Supervision & KPI</div>
     </div>
 
     <div class="stat-strip">
-      <div class="stat-cell"><div class="stat-num" data-count="10" data-suffix="+">0+</div><div class="stat-label">equipment models</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="300" data-suffix="+ h">0+ h</div><div class="stat-label">industrial data</div></div>
-      <div class="stat-cell"><div class="stat-num" data-count="97" data-suffix="%">0%</div><div class="stat-label">predictive accuracy</div></div>
-      <div class="stat-cell"><div class="stat-num" style="font-size:1.15rem;">Dynamic</div><div class="stat-label">simulation</div></div>
-      <div class="stat-cell"><div class="stat-num" style="font-size:1.15rem;">Py</div><div class="stat-label">Python + SciPy + Streamlit</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="10" data-suffix="">0</div><div class="stat-label">équipements modélisés</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="300" data-suffix="+ h">0+ h</div><div class="stat-label">de données réelles</div></div>
+      <div class="stat-cell"><div class="stat-num" data-count="97" data-suffix=" %">0 %</div><div class="stat-label">de performance de validation</div></div>
+      <div class="stat-cell"><div class="stat-num" style="font-size:1.15rem;">Simulation</div><div class="stat-label">dynamique</div></div>
+      <div class="stat-cell"><div class="stat-num" style="font-size:1.15rem;">Py</div><div class="stat-label">Python · SciPy · Streamlit</div></div>
     </div>
   </div>
 </section>
@@ -314,19 +317,24 @@
     <div class="timeline">
       <div class="tl-item">
         <div class="dates">02/2026 – 08/2026 · Soutenance : 22/06/2026</div>
-        <h3>Stagiaire Ingénieure — Projet de Fin d'Études (Digital Twin JFC5)</h3>
+        <h3>Stagiaire ingénieure – Modélisation et simulation de procédés industriels</h3>
         <div class="org">DICE FactoryLab, Université Mohammed VI Polytechnique (UM6P) | Benguerir</div>
         <ul>
-          <li>Développement complet du jumeau numérique présenté en projet de fin d'études ci-dessus.</li>
+          <li>Développement d'un jumeau numérique dynamique de 10 équipements d'une unité industrielle d'acide sulfurique.</li>
+          <li>Calibration et validation des modèles sur plus de 300 heures de données industrielles, avec une performance de validation de 97 % sur 12 variables suivies.</li>
+          <li>Analyse du comportement du procédé à travers des simulations dynamiques, des analyses de sensibilité et des scénarios de fonctionnement.</li>
+          <li>Développement d'une interface de supervision intégrant les KPI du procédé et une visualisation 3D interactive.</li>
         </ul>
       </div>
       <div class="tl-item">
         <div class="dates">06/2025 – 08/2025</div>
-        <h3>Stagiaire Ingénieure — Performance énergétique industrielle</h3>
+        <h3>Stagiaire ingénieure – Performance industrielle & amélioration continue</h3>
         <div class="org">LafargeHolcim | Meknès</div>
         <ul>
-          <li>Modélisation d'un jumeau numérique du parc de compresseurs sous MATLAB/Simulink ; taux de fuites mesuré à 36 % et court-cyclage du compresseur esclave identifié.</li>
-          <li>Analyse des causes (Pareto, Ishikawa, 5 Pourquoi) et plan d'action chiffré : 25 000 MAD d'investissement pour ~210 000 MAD d'économies annuelles (ROI de 840 %, retour sous 2 mois).</li>
+          <li>Modélisation du réseau d'air comprimé sous MATLAB/Simulink et analyse des performances du parc de compresseurs.</li>
+          <li>Identification de pertes liées aux fuites représentant 36 % des pertes analysées et détection d'un problème de court-cyclage d'un compresseur.</li>
+          <li>Analyse des causes racines à l'aide des outils Pareto, Ishikawa et 5 Pourquoi.</li>
+          <li>Proposition d'un plan d'action de 25 000 MAD visant environ 210 000 MAD d'économies annuelles, avec un retour sur investissement estimé à moins de deux mois.</li>
         </ul>
       </div>
       <div class="tl-item">
@@ -334,8 +342,8 @@
         <h3>Stagiaire Ingénieure — Exploitation du réseau électrique</h3>
         <div class="org">RADEM | Meknès</div>
         <ul>
-          <li>Observation du réseau électrique de bout en bout : postes sources, postes répartiteurs et postes de distribution, du trajet de l'électricité depuis l'arrivée ONEE jusqu'aux clients.</li>
-          <li>Étude des systèmes SCADA et des outils de supervision temps réel associés.</li>
+          <li>Étude de l'architecture du réseau électrique, des postes sources aux réseaux de distribution.</li>
+          <li>Découverte des systèmes SCADA et des principes de supervision et de surveillance en temps réel des installations électriques.</li>
         </ul>
       </div>
     </div>
@@ -353,41 +361,113 @@
       <button class="filter-btn" data-filter="personnel">Personnel</button>
     </div>
 
+    <!-- 1. ISO 9001 -->
+    <div class="project proj-item no-media" data-cat="academique">
+      <div class="project-body">
+        <span class="tag">Projet académique</span>
+        <h3>Management de la qualité – Démarche ISO 9001</h3>
+        <p>Étude et mise en application des principes du management de la qualité à travers un cas industriel.</p>
+        <ul>
+          <li>Étude des exigences de la norme ISO 9001 et réalisation d'un diagnostic qualité.</li>
+          <li>Cartographie des processus, identification des risques et structuration de la documentation qualité.</li>
+          <li>Simulation d'audits internes et élaboration de plans d'actions correctives à la suite des écarts identifiés.</li>
+        </ul>
+        <div class="stack">ISO 9001 · Cartographie des processus · Analyse des risques · Audit interne · Actions correctives</div>
+      </div>
+    </div>
+
+    <!-- 2. Digitalisation du suivi qualité -->
+    <div class="project proj-item no-media" data-cat="academique">
+      <div class="project-body">
+        <span class="tag">Projet académique</span>
+        <h3>Digitalisation du suivi qualité – Application de gestion</h3>
+        <p>Conception et développement d'une application numérique destinée à faciliter le suivi des activités qualité et la traçabilité des actions.</p>
+        <ul>
+          <li>Développement d'un outil de gestion des non-conformités et de suivi des audits qualité.</li>
+          <li>Structuration d'une base de données pour centraliser les informations et assurer la traçabilité.</li>
+          <li>Création d'un tableau de bord de suivi des KPI qualité et des actions correctives.</li>
+        </ul>
+        <div class="stack">Python · SQLite · Streamlit · Gestion des données · KPI qualité</div>
+      </div>
+    </div>
+
+    <!-- 3. GMAO -->
+    <div class="project proj-item no-media" data-cat="academique">
+      <div class="project-body">
+        <span class="tag">Projet académique</span>
+        <h3>GMAO industrielle – Gestion et suivi de la maintenance</h3>
+        <p>Développement d'une application de gestion de maintenance assistée par ordinateur permettant de structurer le suivi des équipements et des interventions.</p>
+        <ul>
+          <li>Gestion des équipements, des plans de maintenance et des ordres de travail.</li>
+          <li>Suivi des interventions préventives et correctives.</li>
+          <li>Calcul et visualisation des indicateurs de maintenance : MTBF, MTTR, disponibilité et coûts.</li>
+          <li>Intégration d'une analyse de criticité pour faciliter la priorisation des interventions.</li>
+        </ul>
+        <div class="stack">Python · Streamlit · SQLite · GMAO · KPI maintenance</div>
+      </div>
+    </div>
+
+    <!-- 4. LafargeHolcim -->
     <div class="project proj-item" data-cat="stage">
       <div class="project-media"><img src="22.jpg" alt="Diagnostic du réseau d'air comprimé — LafargeHolcim"></div>
       <div class="project-body">
         <span class="tag">Stage — LafargeHolcim</span>
-        <h3>Jumeau numérique — Réseau d'air comprimé</h3>
-        <p>Diagnostic du parc de compresseurs d'air comprimé de l'usine LafargeHolcim Meknès : modélisation d'un jumeau numérique sous MATLAB/Simulink révélant un taux de fuites de 36 % et un court-cyclage du compresseur esclave. Analyse des causes (Pareto, Ishikawa, 5 Pourquoi) et plan d'action chiffré — 25 000 MAD d'investissement pour ~210 000 MAD d'économies annuelles (ROI de 840 %, retour sous 2 mois).</p>
-        <div class="stack">MATLAB/Simulink · Pareto · Ishikawa · ROI</div>
+        <h3>Diagnostic et optimisation du réseau d'air comprimé</h3>
+        <p>Analyse de la performance du réseau d'air comprimé de l'usine LafargeHolcim Meknès à travers la modélisation sous MATLAB/Simulink.</p>
+        <ul>
+          <li>Diagnostic des pertes énergétiques et identification des fuites représentant 36 % des pertes analysées.</li>
+          <li>Détection d'un problème de court-cyclage d'un compresseur.</li>
+          <li>Analyse des causes racines avec les outils d'amélioration continue.</li>
+          <li>Élaboration d'un plan d'amélioration chiffré : investissement de 25 000 MAD pour environ 210 000 MAD d'économies annuelles, avec un retour sur investissement inférieur à deux mois.</li>
+        </ul>
+        <div class="stack">MATLAB/Simulink · Pareto · Ishikawa · 5 Pourquoi · Analyse énergétique</div>
       </div>
     </div>
 
+    <!-- 5. RADEM -->
     <div class="project proj-item" data-cat="stage">
       <div class="project-media"><img src="3.jpg" alt="Supervision SCADA du réseau électrique — RADEM"></div>
       <div class="project-body">
         <span class="tag">Stage — RADEM</span>
         <h3>Supervision SCADA — Réseau électrique</h3>
-        <p>Suivi de la chaîne électrique complète, de l'arrivée de l'énergie ONEE jusqu'à sa distribution finale : postes sources, postes répartiteurs et postes de distribution. Étude en parallèle des systèmes SCADA utilisés pour la supervision temps réel de ce réseau.</p>
-        <div class="stack">SCADA · réseau électrique</div>
+        <p>Étude de l'architecture d'un réseau électrique de distribution et découverte des systèmes de supervision des installations.</p>
+        <ul>
+          <li>Analyse de la chaîne de distribution électrique, des postes sources aux postes de distribution.</li>
+          <li>Étude des principes de supervision et de surveillance des équipements en temps réel.</li>
+        </ul>
+        <div class="stack">SCADA · Réseaux électriques · Supervision industrielle</div>
       </div>
     </div>
 
+    <!-- 6. Jumeau numérique acide sulfurique -->
+    <div class="project proj-item" data-cat="stage">
+      <div class="project-media"><img src="1.png" alt="Synoptique de supervision du jumeau numérique JFC5"></div>
+      <div class="project-body">
+        <span class="tag">PFE — DICE FactoryLab (UM6P) / OCP Group</span>
+        <h3>Jumeau numérique — Unité d'acide sulfurique JFC5</h3>
+        <p>Jumeau numérique dynamique d'une unité de production d'acide sulfurique (procédé DCDA), de la modélisation physique à la supervision interactive. Le détail du projet est présenté dans la <a href="#flagship">section dédiée au PFE</a>.</p>
+        <div class="stack">Python · SciPy · Streamlit · Modélisation dynamique</div>
+      </div>
+    </div>
+
+    <!-- 7. CompactRIO -->
     <div class="project proj-item" data-cat="academique">
       <div class="project-media"><img src="4.jpg" alt="Interface LabVIEW du système d'acquisition photovoltaïque"></div>
       <div class="project-body">
         <span class="tag">Projet académique — Laboratoire LISA, ENSA Fès</span>
-        <h3>Data Acquisition — Systèmes Photovoltaïques</h3>
-        <p>Conception et mise en œuvre d'un système d'acquisition de données en temps réel pour le suivi d'une installation photovoltaïque, sur une architecture industrielle CompactRIO. Développement d'une chaîne d'instrumentation complète intégrant capteurs de température (thermocouple) et d'irradiance solaire (pyranomètre), avec conditionnement du signal, acquisition via modules NI 9211 et NI 9215, et traitement sous LabVIEW.</p>
+        <h3>Instrumentation et acquisition de données – Système photovoltaïque</h3>
+        <p>Conception d'un système d'acquisition de données en temps réel pour le suivi expérimental d'une installation photovoltaïque.</p>
         <ul>
-          <li>Interface de visualisation temps réel et enregistrement des données pour l'analyse expérimentale.</li>
-          <li>Mise en évidence de la corrélation entre irradiance et température ainsi que des effets d'inertie thermique sur la performance du système.</li>
-          <li>Résolution de problématiques concrètes de configuration réseau, de déploiement temps réel et de fiabilité de mesure.</li>
+          <li>Intégration de capteurs de température (thermocouple) et d'irradiance solaire (pyranomètre).</li>
+          <li>Configuration de l'acquisition via CompactRIO et modules NI 9211 / NI 9215.</li>
+          <li>Développement d'une interface de supervision sous LabVIEW.</li>
+          <li>Analyse des relations entre irradiance, température et comportement thermique du système.</li>
         </ul>
-        <div class="stack">CompactRIO · LabVIEW · NI 9211 / NI 9215</div>
+        <div class="stack">LabVIEW · CompactRIO · NI 9211 · NI 9215</div>
       </div>
     </div>
 
+    <!-- 8. BMS -->
     <div class="project proj-item" data-cat="academique">
       <div class="project-media"><img src="5.jpg" alt="Simulation Simulink du Battery Management System"></div>
       <div class="project-body">
@@ -402,20 +482,7 @@
       </div>
     </div>
 
-    <div class="project proj-item" data-cat="academique">
-      <div class="project-media"><img src="6.jpg" alt="Simulation Simulink du système d'alerte de collision frontale (FCW)"></div>
-      <div class="project-body">
-        <span class="tag">Projet académique</span>
-        <h3>Système d'alerte de collision frontale (FCW) — MATLAB / Simulink</h3>
-        <p>Modélisation Simulink d'un système FCW : évaluation du Time-To-Collision (TTC), logique de décision et sous-système de freinage, à partir d'une architecture de signaux radar et bus CAN.</p>
-        <ul>
-          <li>Modélisation du flux de données entre la couche physique (radar, capteur de vitesse de roue), le traitement du signal, la logique d'évaluation du risque et l'interface d'alerte au conducteur, reproduisant fidèlement une architecture de bus de signaux d'un véhicule réel.</li>
-          <li>Validation du comportement du système par simulation, confirmant le déclenchement correct de l'alerte et de la commande de freinage en fonction des seuils de TTC.</li>
-        </ul>
-        <div class="stack">MATLAB / Simulink · TTC · Bus CAN</div>
-      </div>
-    </div>
-
+    <!-- 9. Autres projets académiques -->
     <div class="project proj-item" data-cat="academique">
       <div class="project-media">
         <img src="a.jpg" alt="Simulation CFD ANSYS Fluent — convection naturelle dans une cavité différentiellement chauffée">
@@ -428,26 +495,25 @@
       </div>
     </div>
 
-    <div class="project-pair proj-item" data-cat="academique">
-      <div class="mini-project">
+    <div class="project proj-item" data-cat="academique">
+      <div class="project-media"><img src="6.jpg" alt="Simulation Simulink du système d'alerte de collision frontale (FCW)"></div>
+      <div class="project-body">
         <span class="tag">Projet académique</span>
-        <h3>Commande MPPT pour système éolien</h3>
-        <p>Système de commande à vitesse variable pour optimiser l'efficacité d'extraction de puissance d'une éolienne.</p>
-        <div class="stack">MATLAB / Simulink</div>
-      </div>
-
-      <div class="mini-project">
-        <span class="tag">Projet académique</span>
-        <h3>Outil numérique de gestion de maintenance (GMAO)</h3>
-        <p>Développement d'une application de gestion des équipements et des opérations de maintenance.</p>
+        <h3>Système d'alerte de collision frontale (FCW) — MATLAB / Simulink</h3>
+        <p>Modélisation Simulink d'un système FCW autour de l'évaluation du Time-To-Collision (TTC), de l'évaluation du risque et de la simulation de l'alerte.</p>
         <ul>
-          <li>Structuration d'une base de données regroupant les équipements, les interventions et les ordres de travail.</li>
-          <li>Suivi des opérations de maintenance préventive et corrective.</li>
-          <li>Calcul d'indicateurs de maintenance : MTBF, MTTR, disponibilité et coûts d'intervention.</li>
-          <li>Intégration d'éléments de criticité des équipements pour faciliter la priorisation des interventions.</li>
+          <li>Modélisation de la logique TTC et de la logique de décision à partir de signaux radar et de vitesse.</li>
+          <li>Validation du comportement du système par simulation, confirmant le déclenchement correct de l'alerte et de la commande de freinage en fonction des seuils de TTC.</li>
         </ul>
-        <div class="stack">Python · Streamlit · SQLite</div>
+        <div class="stack">MATLAB / Simulink · TTC · Évaluation du risque</div>
       </div>
+    </div>
+
+    <div class="project-solo proj-item" data-cat="academique" style="margin-top:36px;">
+      <span class="tag">Projet académique</span>
+      <h3>Commande MPPT pour système éolien</h3>
+      <p>Système de commande à vitesse variable pour optimiser l'efficacité d'extraction de puissance d'une éolienne.</p>
+      <div class="stack">MATLAB / Simulink</div>
     </div>
   </div>
 </section>
@@ -459,103 +525,121 @@
     <div class="skills-columns">
 
       <div class="skill-group">
-        <h3>Modélisation & simulation</h3>
+        <h3>Méthodes industrielles & amélioration continue</h3>
         <div class="chip-row">
-          <span class="chip">Modélisation hybride physique-données</span>
-          <span class="chip">Modélisation dynamique de procédés</span>
-          <span class="chip">Estimation & calibration de paramètres</span>
-          <span class="chip">Optimisation par simulation</span>
-          <span class="chip">Jumeau numérique</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Amélioration continue & fiabilité</h3>
-        <div class="chip-row">
+          <span class="chip">Analyse des processus</span>
+          <span class="chip">Diagnostic industriel</span>
+          <span class="chip">Optimisation des procédés</span>
+          <span class="chip">Pareto</span>
+          <span class="chip">Ishikawa</span>
+          <span class="chip">5 Pourquoi</span>
+          <span class="chip">Analyse des 5M</span>
           <span class="chip">AMDEC</span>
           <span class="chip">5S</span>
-          <span class="chip">Analyse des 5M</span>
-          <span class="chip">5 Pourquoi</span>
-          <span class="chip">Diagramme d'Ishikawa</span>
-          <span class="chip">Analyse de Pareto</span>
           <span class="chip">Kaizen</span>
           <span class="chip">VSM</span>
-          <span class="chip">Analyse de sensibilité</span>
-          <span class="chip">Diagnostic industriel</span>
-          <span class="chip">Optimisation de procédés</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>Analyse de données & visualisation</h3>
+        <h3>Management de la qualité</h3>
         <div class="chip-row">
+          <span class="chip">ISO 9001</span>
+          <span class="chip">Cartographie des processus</span>
+          <span class="chip">Analyse des risques</span>
+          <span class="chip">Gestion des non-conformités</span>
+          <span class="chip">Audits internes (simulation)</span>
+          <span class="chip">Actions correctives et préventives</span>
+          <span class="chip">Traçabilité qualité</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Performance industrielle & maintenance</h3>
+        <div class="chip-row">
+          <span class="chip">Suivi des KPI</span>
+          <span class="chip">Analyse des pertes énergétiques</span>
+          <span class="chip">Optimisation énergétique</span>
+          <span class="chip">GMAO</span>
+          <span class="chip">MTBF</span>
+          <span class="chip">MTTR</span>
+          <span class="chip">Disponibilité</span>
+          <span class="chip">Analyse de criticité</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Digitalisation & analyse de données</h3>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">SQLite</span>
           <span class="chip">Power BI</span>
-          <span class="chip">Unity</span>
           <span class="chip">Streamlit</span>
-          <span class="chip">Analyse statistique (Pareto)</span>
-          <span class="chip">Reporting structuré</span>
-          <span class="chip">Suivi de KPI & dashboarding</span>
+          <span class="chip">Excel / VBA</span>
+          <span class="chip">Tableaux de bord</span>
+          <span class="chip">Reporting</span>
+          <span class="chip">Visualisation de données</span>
+          <span class="chip">Digitalisation des processus</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <h3>Systèmes embarqués & véhicule</h3>
+        <h3>Modélisation & simulation</h3>
         <div class="chip-row">
-          <span class="chip">Protocole bus CAN & réseaux véhicule</span>
-          <span class="chip">Algorithmes ADAS (ACC, détection d'obstacles / de voie)</span>
+          <span class="chip">Jumeaux numériques</span>
+          <span class="chip">Modélisation dynamique de procédés</span>
+          <span class="chip">Modélisation physique</span>
+          <span class="chip">Calibration et validation de modèles</span>
+          <span class="chip">MATLAB/Simulink</span>
+          <span class="chip">DWSIM</span>
+          <span class="chip">ANSYS Fluent</span>
+          <span class="chip">COMSOL</span>
+          <span class="chip">Abaqus</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Supervision & instrumentation</h3>
+        <div class="chip-row">
+          <span class="chip">SCADA</span>
+          <span class="chip">LabVIEW</span>
+          <span class="chip">CompactRIO</span>
+          <span class="chip">Acquisition de données</span>
+          <span class="chip">Instrumentation industrielle</span>
         </div>
       </div>
 
       <div class="skill-group">
         <h3>Énergie & génie des procédés</h3>
         <div class="chip-row">
-          <span class="chip">Bilans matière & énergie</span>
+          <span class="chip">Bilans matière et énergie</span>
           <span class="chip">Thermodynamique</span>
-          <span class="chip">Transferts thermiques & massiques</span>
+          <span class="chip">Transferts thermiques et massiques</span>
           <span class="chip">PVsyst</span>
           <span class="chip">RETScreen</span>
-          <span class="chip">Dialux</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Programmation / data</h3>
-        <div class="chip-row">
-          <span class="chip">Python</span>
-          <span class="chip">SQL</span>
-          <span class="chip">MATLAB / Simulink</span>
-          <span class="chip">C</span>
-          <span class="chip">Excel / VBA</span>
-          <span class="chip">GitHub</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Logiciels de simulation & CAO</h3>
-        <div class="chip-row">
-          <span class="chip">ANSYS Fluent</span>
-          <span class="chip">Blender</span>
-          <span class="chip">COMSOL</span>
-          <span class="chip">Abaqus</span>
-          <span class="chip">Aspen / DWSIM</span>
           <span class="chip">TRNSYS</span>
-          <span class="chip">SAM</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Langues</h3>
+        <div class="chip-row">
+          <span class="chip">Arabe (langue maternelle)</span>
+          <span class="chip">Français (C1)</span>
+          <span class="chip">Anglais (C1)</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Autres outils et technologies</h3>
+        <div class="chip-row">
+          <span class="chip">C</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">Blender</span>
           <span class="chip">CATIA</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Instrumentation / contrôle</h3>
-        <div class="chip-row">
-          <span class="chip">LabVIEW</span>
-          <span class="chip">CompactRIO</span>
-          <span class="chip">SCADA</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3>Automation / digital</h3>
-        <div class="chip-row">
+          <span class="chip">SAM</span>
+          <span class="chip">Dialux</span>
           <span class="chip">n8n</span>
           <span class="chip">Supabase</span>
         </div>
@@ -575,7 +659,7 @@
         <div class="badge">JESI 2025 — 1ère place</div>
         <h3>PowerUp Club, ENSA Fès</h3>
         <div class="role">Journée Énergétique & Systèmes Intelligents</div>
-        <p>Participation à l'organisation de la journée, et à la compétition JESI 2025 — équipe classée 1ère avec le projet <strong>EcoTwin</strong>.</p>
+        <p>Participation à l'organisation de la Journée Énergétique & Systèmes Intelligents (JESI 2025) et à la compétition d'innovation associée. Notre équipe a remporté la première place avec le projet <strong>EcoTwin</strong>.</p>
         <div class="chip-row small"><span class="chip">Digital Twin</span><span class="chip">Énergie</span><span class="chip">Gamification</span></div>
       </div>
 
@@ -609,9 +693,9 @@
           <div>
             <h3>PowerUp Club — ENSA Fès</h3>
             <ul class="innov-sub">
-              <li>Organisation de JESI (Journée Énergétique & Systèmes Intelligents)</li>
-              <li>Participation à des événements autour de l'énergie et des systèmes intelligents</li>
-              <li>Cours de Python dispensés aux étudiants de l'ENSA Fès</li>
+              <li>Participation à l'organisation d'événements scientifiques et techniques autour de l'énergie et des systèmes intelligents.</li>
+              <li>Animation de séances de formation en Python auprès des étudiants de l'ENSA Fès.</li>
+              <li>Contribution à des initiatives étudiantes en matière d'innovation et de digitalisation.</li>
             </ul>
           </div>
           <img src="attestation-python-powerup.jpg" alt="Attestation — cours de Python aux étudiants de l'ENSA Fès, PowerUp Club" onclick="openLightbox(this.src)">
@@ -661,7 +745,7 @@
   <div class="wrap contact-grid">
     <div>
       <div class="section-head" style="margin-bottom:14px;"><h2>Contact</h2></div>
-      <p style="color:var(--ink-soft); max-width:56ch;">Ouverte aux opportunités en ingénierie process, digitalisation industrielle et recherche appliquée. N'hésitez pas à me contacter.</p>
+      <p style="color:var(--ink-soft); max-width:56ch;">Ouverte aux opportunités en ingénierie industrielle, méthodes, procédés, qualité, amélioration continue et digitalisation industrielle. Je suis également intéressée par les projets de recherche appliquée et d'innovation technologique.</p>
       <ul class="contact-list" style="margin-top:18px;">
         <li><a href="mailto:benkarrouaya2021@gmail.com">benkarrouaya2021@gmail.com</a></li>
         <li>+212 617 290 872</li>
@@ -675,7 +759,7 @@
 </section>
 
 <footer>
-  © 2026 Aya Benkarrou — Ingénieure Génie Énergétique & Systèmes Intelligents
+  © 2026 Aya Benkarrou — Ingénieure d'État | Méthodes, Process, Qualité & Performance industrielle
 </footer>
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
